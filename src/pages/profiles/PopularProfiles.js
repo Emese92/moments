@@ -29,7 +29,8 @@ const PopularProfiles = ({ mobile }) => {
           )}
         </>
       ) : (
-        <Asset spinner />
+        <Asset spinner
+         />
       )}
     </Container>
   );
