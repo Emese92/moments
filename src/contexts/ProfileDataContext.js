@@ -1,4 +1,3 @@
-
 import { createContext, useContext, useEffect, useState } from "react";
 import { axiosReq, axiosRes } from "../api/axiosDefaults";
 import { useCurrentUser } from "../contexts/CurrentUserContext";
@@ -43,7 +42,7 @@ export const ProfileDataProvider = ({ children }) => {
       console.log(err);
     }
   };
-  
+
   useEffect(() => {
     const handleMount = async () => {
       try {
@@ -64,7 +63,7 @@ export const ProfileDataProvider = ({ children }) => {
 
   return (
     <ProfileDataContext.Provider value={profileData}>
-      <SetProfileDataContext.Provider value={{setProfileData, handleFollow}}>
+      <SetProfileDataContext.Provider value={{ setProfileData, handleFollow }}>
         {children}
       </SetProfileDataContext.Provider>
     </ProfileDataContext.Provider>

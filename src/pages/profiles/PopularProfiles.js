@@ -7,6 +7,7 @@ import Profile from "./Profile";
 
 const PopularProfiles = ({ mobile }) => {
   const { popularProfiles } = useProfileData();
+
   return (
     <Container
       className={`${appStyles.Content} ${
@@ -29,8 +30,7 @@ const PopularProfiles = ({ mobile }) => {
           )}
         </>
       ) : (
-        <Asset spinner
-         />
+        <Asset spinner />
       )}
     </Container>
   );
